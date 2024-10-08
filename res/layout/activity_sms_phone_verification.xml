@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context="snapchat.example.snapchat.LoginAndRegisterActivities.smsPhoneVerification">
+
+    <TextView
+        android:id="@+id/textView_phoneVerification_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/enter_confirmation_code"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_phoneVerification_text2"
+        android:layout_width="184dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="#CD000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_phoneVerification_text1" />
+
+    <TextView
+        android:id="@+id/textView_phoneVerification_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/code"
+        android:textColor="#1ab0ff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_phoneVerification_text2" />
+
+    <snapchat.example.snapchat.ExtraClasses.PinEntryEditText
+        android:id="@+id/txt_pin_entry"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_phoneVerification_text3" />
+
+    <Button
+        android:id="@+id/button_resend"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="275dp"
+        android:background="@drawable/rounded_button"
+        android:enabled="false"
+        android:onClick="resendSMS"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_phoneVerification_text4"
+        android:layout_width="236dp"
+        android:layout_height="33dp"
+        android:textColor="#FF0000"
+        android:textSize="@dimen/textSize2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pin_entry" />
+</androidx.constraintlayout.widget.ConstraintLayout>

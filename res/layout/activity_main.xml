@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefc00"
+    tools:context="snapchat.example.snapchat.LoginAndRegisterActivities.Homescreen">
+
+    <Button
+        android:id="@+id/button_logIn"
+        android:layout_width="413dp"
+        android:layout_height="75dp"
+        android:background="#f23b57"
+        android:onClick="toLogIn"
+        android:text="@string/log_in_caps"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_signUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_signUp"
+        android:layout_width="412dp"
+        android:layout_height="75dp"
+        android:background="#10adff"
+        android:onClick="toName"
+        android:text="@string/sign_up"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_Logo"
+        android:layout_width="116dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/snapchatlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
