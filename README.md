@@ -1,6 +1,8 @@
 # Snapchat Login and Registration Clone
 This project is an Android application that replicates the Snapchat login and registration process. It focuses on mimicking the iOS version of Snapchat's UI rather than the Play Store version. The app is developed using Java for the backend, PHP/SQL for database operations, and XML for layout and design. Additionally, it includes SMS-based phone number verification.
 
+**[Video Demonstration](https://drive.google.com/file/d/17gRyR4QzlFBBmY2ZkFFvaSDVqvm2-H1F/view?usp=drive_link)** 
+
 **Features**
 * Login and Registration: Users can sign up and log in with a username, email, password, and phone number.
 * SMS Verification: Phone numbers are verified using an SMS-based authentication system.
