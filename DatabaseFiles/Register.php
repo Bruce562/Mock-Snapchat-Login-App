@@ -1,5 +1,5 @@
 <?php
-	$con = mysqli_connect("localhost", "id15534403_snapchatdatabasetest", "Password123456789!", "id15534403_snapchatdatabase");
+	$con = mysqli_connect("localhost", "", "", "");
 	
 	$name = $_POST["name"];
 	$birthday = $_POST["birthday"];
