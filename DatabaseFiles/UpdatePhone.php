@@ -1,6 +1,6 @@
 <?php
 
-	$con=mysqli_connect("localhost", "id15534403_snapchatdatabasetest", "Password123456789!", "id15534403_snapchatdatabase");
+	$con=mysqli_connect("localhost", "", "", "");
 	
 	$phoneNum = $_POST["phoneNum"];
 	$username = $_POST["username"];
